@@ -617,8 +617,8 @@ int main(int argc, char *argv[])
 		refresh();
 	}
 	endwin();
-	close(copied);
-	close(file);
+	fclose(copied);
+	fclose(file);
 	
 	return 0;
 }
